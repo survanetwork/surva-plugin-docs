@@ -63,6 +63,21 @@ const config = {
                         position: "left",
                     },
                     {
+                        to: "/category/allsigns",
+                        label: "AllSigns",
+                        position: "left",
+                    },
+                    {
+                        to: "/category/hotblock",
+                        label: "HotBlock",
+                        position: "left",
+                    },
+                    {
+                        to: "/category/badwordblocker",
+                        label: "BadWordBlocker",
+                        position: "left",
+                    },
+                    {
                         href: "https://plugins.surva.net",
                         label: "surva Plugins",
                         position: "left",
