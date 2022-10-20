@@ -10,11 +10,11 @@
         "tutorial",
         "setup"
     ],
-    "homepage": "https://github.com/survanetwork/surva-plugin-docs",
+    "homepage": "https://plugin-docs.surva.net",
     "bugs": {
         "url": "https://github.com/survanetwork/surva-plugin-docs/issues"
     },
-    "license": "UNLICENSED",
+    "license": "CC-BY-4.0",
     "author": {
         "name": "Jarne",
         "email": "jarne@surva.net",
@@ -63,6 +63,5 @@
     },
     "engines": {
         "node": ">=16.14"
-    },
-    "private": true
+    }
 }
