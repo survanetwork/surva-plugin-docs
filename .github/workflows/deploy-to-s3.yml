@@ -1,0 +1,48 @@
+name: Website build & deployment to AWS S3 bucket
+on: [push]
+jobs:
+    build-deploy:
+        name: Build and deploy static website to AWS S3
+        runs-on: ubuntu-latest
+        permissions:
+            id-token: write
+            contents: read
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16
+                  cache: yarn
+
+            - name: Install Yarn dependencies
+              run: yarn install --frozen-lockfile
+
+            - name: Docusaurus .docusaurus folder cache
+              id: cache-docusaurus-cache
+              uses: actions/cache@v3
+              with:
+                  path: .docusaurus
+                  key: ${{ runner.os }}-docusaurus-cache
+
+            - name: Docusaurus build folder cache
+              id: cache-docusaurus-build
+              uses: actions/cache@v3
+              with:
+                  path: build
+                  key: ${{ runner.os }}-docusaurus-build
+
+            - name: Build Docusaurus page
+              run: yarn build
+
+            - name: Configure AWS
+              uses: aws-actions/configure-aws-credentials@v1
+              with:
+                  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                  aws-region: eu-central-1
+
+            - name: Upload to AWS S3
+              run: aws s3 sync build s3://plugin-docs.surva.net --delete
