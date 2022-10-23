@@ -58,22 +58,22 @@ const config = {
                 },
                 items: [
                     {
-                        to: "/category/worlds",
+                        to: "/worlds",
                         label: "Worlds",
                         position: "left",
                     },
                     {
-                        to: "/category/allsigns",
+                        to: "/allsigns",
                         label: "AllSigns",
                         position: "left",
                     },
                     {
-                        to: "/category/hotblock",
+                        to: "/hotblock",
                         label: "HotBlock",
                         position: "left",
                     },
                     {
-                        to: "/category/badwordblocker",
+                        to: "/badwordblocker",
                         label: "BadWordBlocker",
                         position: "left",
                     },
@@ -97,7 +97,19 @@ const config = {
                         items: [
                             {
                                 label: "Worlds",
-                                to: "/category/worlds",
+                                to: "/worlds",
+                            },
+                            {
+                                label: "AllSigns",
+                                to: "/allsigns",
+                            },
+                            {
+                                label: "HotBlock",
+                                to: "/hotblock",
+                            },
+                            {
+                                label: "BadWordBlocker",
+                                to: "/badwordblocker",
                             },
                         ],
                     },
