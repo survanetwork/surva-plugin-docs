@@ -37,7 +37,7 @@ const config = {
                     routeBasePath: "/",
                     sidebarPath: require.resolve("./sidebars.js"),
                     editUrl:
-                        "https://github.com/survanetwork/surva-plugin-docs/",
+                        "https://github.com/survanetwork/surva-plugin-docs/tree/main/",
                 },
                 blog: false,
                 theme: {
