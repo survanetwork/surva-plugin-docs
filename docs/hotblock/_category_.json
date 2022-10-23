@@ -3,6 +3,7 @@
     "label": "HotBlock",
     "collapsed": false,
     "link": {
-        "type": "generated-index"
+        "type": "generated-index",
+        "slug": "/hotblock"
     }
 }

@@ -3,6 +3,7 @@
     "label": "Worlds",
     "collapsed": false,
     "link": {
-        "type": "generated-index"
+        "type": "generated-index",
+        "slug": "/worlds"
     }
 }
