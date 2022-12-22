@@ -37,8 +37,8 @@ jobs:
             - name: Build Docusaurus page
               run: yarn build
               env:
-                  GATSBY_UMAMI_HOST: https://umami.landway.space
-                  GATSBY_UMAMI_ID: 15870ee3-cc74-4306-b83e-e0c6e873b88f
+                  UMAMI_HOST: https://umami.landway.space
+                  UMAMI_ID: 15870ee3-cc74-4306-b83e-e0c6e873b88f
 
             - name: Configure AWS
               uses: aws-actions/configure-aws-credentials@v1
