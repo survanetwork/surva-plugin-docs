@@ -167,7 +167,7 @@ const config = {
 
     scripts: [
         {
-            src: `${process.env.UMAMI_HOST}/umami.js`,
+            src: `${process.env.UMAMI_HOST}/script.js`,
             async: true,
             defer: true,
             "data-website-id": process.env.UMAMI_ID,
