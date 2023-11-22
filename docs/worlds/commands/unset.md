@@ -4,7 +4,7 @@ sidebar_position: 9
 
 # Unset flags
 
-## /worlds unset <flag\>
+## /worlds unset &#60;flag#62;
 
 Remove the value of this flag, behave like it wasn't set (see [here](./../flags) for available flag names)
 
