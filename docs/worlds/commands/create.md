@@ -8,9 +8,9 @@ sidebar_position: 3
 
 Create a new world.
 
-| Info          | Value               |
-| ------------- | ------------------- |
-| Permission    | worlds.admin.create |
+| Info          | Value                     |
+| ------------- | ------------------------- |
+| Permission    | worlds.admin.create       |
 | Short command | /ws cr &#60;worldname#62; |
 
 Examples:
@@ -21,9 +21,9 @@ Examples:
 
 Create a world with the given name and world generator type (can be `NORMAL`, `FLAT`, `NETHER`, or any other valid generator registered by a plugin).
 
-| Info          | Value                       |
-| ------------- | --------------------------- |
-| Permission    | worlds.admin.create         |
+| Info          | Value                                   |
+| ------------- | --------------------------------------- |
+| Permission    | worlds.admin.create                     |
 | Short command | /ws cr &#60;worldname#62; &#60;type#62; |
 
 Examples:

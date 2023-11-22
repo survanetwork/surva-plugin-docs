@@ -126,8 +126,8 @@ const config = {
                                 href: "https://discord.gg/t4Kg4j3829",
                             },
                             {
-                                label: "Twitter",
-                                href: "https://twitter.com/survanetwork",
+                                label: "Mastodon",
+                                href: "https://mastodon.social/@survanetwork",
                             },
                             {
                                 label: "send an e-mail 📫 to our open source team",

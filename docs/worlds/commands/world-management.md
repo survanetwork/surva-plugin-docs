@@ -8,9 +8,9 @@ sidebar_position: 4
 
 Remove a world
 
-| Info          | Value               |
-| ------------- | ------------------- |
-| Permission    | worlds.admin.remove |
+| Info          | Value                     |
+| ------------- | ------------------------- |
+| Permission    | worlds.admin.remove       |
 | Short command | /ws rm &#60;worldname#62; |
 
 Examples:
@@ -21,9 +21,9 @@ Examples:
 
 Load a world
 
-| Info          | Value               |
-| ------------- | ------------------- |
-| Permission    | worlds.admin.load   |
+| Info          | Value                     |
+| ------------- | ------------------------- |
+| Permission    | worlds.admin.load         |
 | Short command | /ws ld &#60;worldname#62; |
 
 Examples:
@@ -34,9 +34,9 @@ Examples:
 
 Unload a world
 
-| Info          | Value                |
-| ------------- | -------------------- |
-| Permission    | worlds.admin.unload  |
+| Info          | Value                      |
+| ------------- | -------------------------- |
+| Permission    | worlds.admin.unload        |
 | Short command | /ws uld &#60;worldname#62; |
 
 Examples:

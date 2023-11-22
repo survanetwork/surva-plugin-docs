@@ -8,10 +8,10 @@ sidebar_position: 5
 
 Teleport into a world
 
-| Info          | Value                      |
-| ------------- | -------------------------- |
-| Permission    | worlds.admin.teleport.self |
-| Short command | /worlds tp &#60;worldname#62;    |
+| Info          | Value                         |
+| ------------- | ----------------------------- |
+| Permission    | worlds.admin.teleport.self    |
+| Short command | /worlds tp &#60;worldname#62; |
 
 Examples:
 
@@ -23,9 +23,9 @@ While the permission `worlds.admin.teleport.self` is usually used for admins, al
 
 Teleport another player into a world
 
-| Info          | Value                             |
-| ------------- | --------------------------------- |
-| Permission    | worlds.admin.teleport.self        |
+| Info          | Value                                         |
+| ------------- | --------------------------------------------- |
+| Permission    | worlds.admin.teleport.self                    |
 | Short command | /worlds tp &#60;player#62; &#60;worldname#62; |
 
 Examples:
