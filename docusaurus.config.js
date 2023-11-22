@@ -3,8 +3,11 @@
 
 require("dotenv").config({ path: ".env.development.local" })
 
-const lightCodeTheme = require("prism-react-renderer/themes/github")
-const darkCodeTheme = require("prism-react-renderer/themes/dracula")
+const prismRenderer = require("prism-react-renderer")
+const codeThemes = prismRenderer.themes
+
+const lightCodeTheme = codeThemes.github
+const darkCodeTheme = codeThemes.dracula
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
