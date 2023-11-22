@@ -13,7 +13,7 @@ and perform administrative actions (usually intended for server OP's).
 
 All filter components of BadWordBlocker can be bypassed by assigning a permission. By default, OP's are allowed to bypass all filters.
 
-`badwordblocker.bypass` Bypass all filters  
+`badwordblocker.bypass` Bypass all filters
 
 `badwordblocker.bypass.swear` Bypass [swear word filter](./filters.md#swear-word-filter)  
 `badwordblocker.bypass.same` Bypass [duplicate filter](./filters.md#duplicate-filter)  
