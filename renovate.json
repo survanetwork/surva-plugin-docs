@@ -13,6 +13,11 @@
         {
             "matchPackageNames": ["node"],
             "versioning": "node"
+        },
+        {
+            "extends": "monorepo:docusaurus",
+            "groupName": "docusaurus monorepo",
+            "matchUpdateTypes": ["digest", "patch", "minor", "major"]
         }
     ]
 }
