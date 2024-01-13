@@ -2,4 +2,15 @@
 
 surva network open source plugins documentation
 
-[![Website build & deployment to AWS S3 bucket](https://github.com/survanetwork/surva-plugin-docs/actions/workflows/deploy-to-s3.yml/badge.svg)](https://github.com/survanetwork/surva-plugin-docs/actions/workflows/deploy-to-s3.yml)
+[![Build and deploy the website](https://github.com/survanetwork/surva-plugin-docs/actions/workflows/build-deploy.yml/badge.svg)](https://github.com/survanetwork/surva-plugin-docs/actions/workflows/build-deploy.yml)
+
+## 📙 Description
+
+Documentations for surva network plugins. This includes general instructions about installation, translation,
+etc. of plugins. In addition, a more detailed description is provided per plugin about its functions,
+commands and configuration.
+
+## 🧱 Architecture
+
+The website uses Docusaurus as a base framework. Documentation content is written in Markdown
+inside the [docs](./docs) directory.
