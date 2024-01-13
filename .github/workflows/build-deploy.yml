@@ -1,11 +1,8 @@
-name: Website build & deployment to AWS S3 bucket
-on:
-    push:
-        branches:
-            - main
+name: Build and deploy the website
+on: [push]
 jobs:
-    build-deploy:
-        name: Build and deploy static website to AWS S3
+    build:
+        name: Build Docusaurus project
         runs-on: ubuntu-latest
         permissions:
             id-token: write
@@ -42,6 +39,29 @@ jobs:
               env:
                   UMAMI_HOST: https://umami.landway.space
                   UMAMI_ID: 15870ee3-cc74-4306-b83e-e0c6e873b88f
+
+            - name: Save build output
+              uses: actions/upload-artifact@v4
+              with:
+                  name: docusau-build-out
+                  path: build
+    deploy:
+        name: Deploy static website to S3
+        if: github.ref == 'refs/heads/main'
+        needs: build
+        runs-on: ubuntu-latest
+        permissions:
+            id-token: write
+            contents: read
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Restore build output
+              uses: actions/download-artifact@v4
+              with:
+                  name: docusau-build-out
+                  path: build
 
             - name: Configure AWS
               uses: aws-actions/configure-aws-credentials@v4
