@@ -24,7 +24,7 @@ List all flags and their values in a world
 
 Examples: `/worlds set show`
 
-### /worlds set permission &#60;permissionstring#62;
+### /worlds set permission &#60;permissionstring&#62;
 
 Set a permission which is needed to join the world (cannot be set on default world)
 
@@ -32,7 +32,7 @@ Examples:
 
 `/worlds set permission you.arecool` - Only players with the permission `you.arecool` are allowed to join the world
 
-### /worlds set gamemode &#60;gamemodename#62;
+### /worlds set gamemode &#60;gamemodename&#62;
 
 Set the world's game mode (possible values are `survival`, `creative`, `adventure` or `spectator`)
 
@@ -59,7 +59,7 @@ Examples:
 -   `command` set to `black` doens't allow executing commands which are on the black list
 -   `drop` set to `white` only allows dropping items which are on the white list
 
-**Command: /worlds set &#60;flag#62; &#60;value#62;**
+**Command: /worlds set &#60;flag&#62; &#60;value&#62;**
 
 Examples:
 
@@ -73,7 +73,7 @@ The following flags are normal flags without support for control lists: see [her
 
 They can be set to `true` (allow) or `false` (deny).
 
-**Command: /worlds set &#60;flag#62; &#60;value#62;**
+**Command: /worlds set &#60;flag&#62; &#60;value&#62;**
 
 Examples:
 
