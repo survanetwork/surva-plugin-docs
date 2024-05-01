@@ -8,9 +8,9 @@ sidebar_position: 6
 
 Copy a world
 
-| Info          | Value                                |
-| ------------- | ------------------------------------ |
-| Permission    | worlds.admin.copy                    |
+| Info          | Value                                  |
+| ------------- | -------------------------------------- |
+| Permission    | worlds.admin.copy                      |
 | Short command | /worlds cp &#60;from&#62; &#60;to&#62; |
 
 Examples:
@@ -21,9 +21,9 @@ Examples:
 
 Rename a world
 
-| Info          | Value                                |
-| ------------- | ------------------------------------ |
-| Permission    | worlds.admin.rename                  |
+| Info          | Value                                  |
+| ------------- | -------------------------------------- |
+| Permission    | worlds.admin.rename                    |
 | Short command | /worlds rn &#60;from&#62; &#60;to&#62; |
 
 Examples:
