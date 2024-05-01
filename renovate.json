@@ -1,5 +1,13 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        ":semanticPrefixFixDepsChoreOthers",
+        ":ignoreModulesAndTests",
+        "group:monorepos",
+        "group:recommended",
+        "replacements:all",
+        "workarounds:all"
+    ],
     "schedule": ["before 5am"],
     "prHourlyLimit": 2,
     "prConcurrentLimit": 3,
@@ -12,11 +20,6 @@
         {
             "matchPackageNames": ["node"],
             "versioning": "node"
-        },
-        {
-            "extends": "monorepo:docusaurus",
-            "groupName": "docusaurus monorepo",
-            "matchUpdateTypes": ["digest", "patch", "minor", "major"]
         }
     ]
 }
