@@ -55,9 +55,9 @@ They can be set to four possible operation modes:
 
 Examples:
 
--   `build` set to `false` doesn't allow building
--   `command` set to `black` doens't allow executing commands which are on the black list
--   `drop` set to `white` only allows dropping items which are on the white list
+- `build` set to `false` doesn't allow building
+- `command` set to `black` doens't allow executing commands which are on the black list
+- `drop` set to `white` only allows dropping items which are on the white list
 
 **Command: /worlds set &#60;flag&#62; &#60;value&#62;**
 
