@@ -38,7 +38,7 @@ jobs:
               run: yarn build
               env:
                   UMAMI_HOST: https://umami.wayspace.net
-                  UMAMI_ID: 15870ee3-cc74-4306-b83e-e0c6e873b88f
+                  UMAMI_ID: a30ae129-e24f-490e-b4ea-3cd30e4fa743
 
             - name: Save build output
               uses: actions/upload-artifact@v4
