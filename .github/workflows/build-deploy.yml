@@ -41,7 +41,7 @@ jobs:
                   UMAMI_ID: a30ae129-e24f-490e-b4ea-3cd30e4fa743
 
             - name: Save build output
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v5
               with:
                   name: docusau-build-out
                   path: build
@@ -58,7 +58,7 @@ jobs:
               uses: actions/checkout@v5
 
             - name: Restore build output
-              uses: actions/download-artifact@v5
+              uses: actions/download-artifact@v6
               with:
                   name: docusau-build-out
                   path: build
