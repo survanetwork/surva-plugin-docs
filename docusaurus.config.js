@@ -83,7 +83,7 @@ const config = {
                         position: "left",
                     },
                     {
-                        href: "https://plugins.surva.net",
+                        href: "https://dev.surva.net/plugins/",
                         label: "surva Plugins",
                         position: "left",
                     },
@@ -139,12 +139,12 @@ const config = {
                         title: "More",
                         items: [
                             {
-                                label: "surva.net",
-                                href: "https://surva.net",
+                                label: "surva dev",
+                                href: "https://dev.surva.net",
                             },
                             {
                                 label: "Dev blog",
-                                href: "https://devblog.surva.net",
+                                href: "https://dev.surva.net/blog/",
                             },
                             {
                                 label: "GitHub",

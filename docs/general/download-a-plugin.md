@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Official download
 
-You can download the latest version of our plugins from our **[offical plugins portal](https://plugins.surva.net)**.
+You can download the latest version of our plugins from our **[offical plugins portal](https://dev.surva.net/plugins/)**.
 
 There is a "Direct download" button for every plugin. Click on it to download the latest stable version.
 
