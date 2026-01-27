@@ -37,7 +37,7 @@ jobs:
             - name: Build Docusaurus page
               run: yarn build
               env:
-                  UMAMI_HOST: https://umami.wayspace.net
+                  UMAMI_HOST: https://umami.yellowlake.net
                   UMAMI_ID: a30ae129-e24f-490e-b4ea-3cd30e4fa743
 
             - name: Save build output

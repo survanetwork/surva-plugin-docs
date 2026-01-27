@@ -152,7 +152,7 @@ const config = {
                             },
                             {
                                 label: "privacy policy",
-                                href: "https://privaport.wayspace.net/surva.network/",
+                                href: "https://privaport.yellowlake.net/surva.network/",
                             },
                         ],
                     },
