@@ -11,14 +11,19 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v6
 
+            - name: Setup Pnpm
+              uses: pnpm/action-setup@v4
+              with:
+                  version: 10
+
             - name: Setup Node.js
               uses: actions/setup-node@v6
               with:
                   node-version: 24
-                  cache: yarn
+                  cache: pnpm
 
-            - name: Install Yarn dependencies
-              run: yarn install --immutable
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
 
             - name: Docusaurus .docusaurus folder cache
               id: cache-docusaurus-cache
@@ -35,7 +40,7 @@ jobs:
                   key: ${{ runner.os }}-docusaurus-build
 
             - name: Build Docusaurus page
-              run: yarn build
+              run: pnpm run build
               env:
                   UMAMI_HOST: https://umami.yellowlake.net
                   UMAMI_ID: a30ae129-e24f-490e-b4ea-3cd30e4fa743
