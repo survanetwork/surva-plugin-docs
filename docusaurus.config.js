@@ -1,33 +1,44 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
 
-require("dotenv").config({ path: ".env.development.local" })
+import dotenv from "dotenv"
+import { themes as prismThemes } from "prism-react-renderer"
 
-const prismRenderer = require("prism-react-renderer")
-const codeThemes = prismRenderer.themes
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const lightCodeTheme = codeThemes.github
-const darkCodeTheme = codeThemes.dracula
+dotenv.config({ path: ".env.development.local" })
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: "surva plugin docs",
     tagline:
         "Docs for surva network open source PocketMine-MP plugins, including Worlds, AllSigns, HotBlock, FancyGenerators and BadWordBlocker.",
-    url: "https://plugin-docs.surva.net",
-    baseUrl: "/",
-    onBrokenLinks: "throw",
-    onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
+
+    // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+    future: {
+        v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    },
+
+    // Set the production url of your site here
+    url: "https://plugin-docs.surva.net",
+    // Set the /<baseUrl>/ pathname under which your site is served
+    // For GitHub pages deployment, it is often '/<projectName>/'
+    baseUrl: "/",
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    //organizationName: "facebook", // Usually your GitHub org/user name.
-    //projectName: "docusaurus", // Usually your repo name.
+    // organizationName: "facebook", // Usually your GitHub org/user name.
+    // projectName: "docusaurus", // Usually your repo name.
 
-    // Even if you don't use internalization, you can use this field to set useful
-    // metadata like html lang. For example, if your site is Chinese, you may want
-    // to replace "en" with "zh-Hans".
+    onBrokenLinks: "throw",
+
+    // Even if you don't use internationalization, you can use this field to set
+    // useful metadata like html lang. For example, if your site is Chinese, you
+    // may want to replace "en" with "zh-Hans".
     i18n: {
         defaultLocale: "en",
         locales: ["en"],
@@ -40,13 +51,15 @@ const config = {
             ({
                 docs: {
                     routeBasePath: "/",
-                    sidebarPath: require.resolve("./sidebars.js"),
+                    sidebarPath: "./sidebars.js",
+                    // Please change this to your repo.
+                    // Remove this to remove the "edit this page" links.
                     editUrl:
                         "https://github.com/survanetwork/surva-plugin-docs/tree/main/",
                 },
                 blog: false,
                 theme: {
-                    customCss: require.resolve("./src/css/custom.css"),
+                    customCss: "./src/css/custom.css",
                 },
             }),
         ],
@@ -55,6 +68,11 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
+            // Replace with your project's social card
+            // image: "img/docusaurus-social-card.jpg",
+            colorMode: {
+                respectPrefersColorScheme: true,
+            },
             navbar: {
                 title: "surva plugin docs",
                 logo: {
@@ -159,12 +177,9 @@ const config = {
                 ],
                 copyright: `by surva network ${new Date().getFullYear()}`,
             },
-            colorMode: {
-                respectPrefersColorScheme: true,
-            },
             prism: {
-                theme: lightCodeTheme,
-                darkTheme: darkCodeTheme,
+                theme: prismThemes.github,
+                darkTheme: prismThemes.dracula,
             },
         }),
 
@@ -178,4 +193,4 @@ const config = {
     ],
 }
 
-module.exports = config
+export default config
