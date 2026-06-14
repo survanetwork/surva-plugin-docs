@@ -9,13 +9,13 @@ jobs:
             contents: read
         steps:
             - name: Checkout
-              uses: actions/checkout@v6
+              uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
 
             - name: Setup Pnpm
-              uses: pnpm/action-setup@v6
+              uses: pnpm/action-setup@0e279bb959325dab635dd2c09392533439d90093 # v6
 
             - name: Setup Node.js
-              uses: actions/setup-node@v6
+              uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6
               with:
                   node-version: 24
                   cache: pnpm
@@ -25,14 +25,14 @@ jobs:
 
             - name: Docusaurus .docusaurus folder cache
               id: cache-docusaurus-cache
-              uses: actions/cache@v5
+              uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5
               with:
                   path: .docusaurus
                   key: ${{ runner.os }}-docusaurus-cache
 
             - name: Docusaurus build folder cache
               id: cache-docusaurus-build
-              uses: actions/cache@v5
+              uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5
               with:
                   path: build
                   key: ${{ runner.os }}-docusaurus-build
@@ -44,7 +44,7 @@ jobs:
                   UMAMI_ID: a30ae129-e24f-490e-b4ea-3cd30e4fa743
 
             - name: Save build output
-              uses: actions/upload-artifact@v7
+              uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
               with:
                   name: docusau-build-out
                   path: build
@@ -58,16 +58,16 @@ jobs:
             contents: read
         steps:
             - name: Checkout
-              uses: actions/checkout@v6
+              uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
 
             - name: Restore build output
-              uses: actions/download-artifact@v8
+              uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8
               with:
                   name: docusau-build-out
                   path: build
 
             - name: Configure AWS
-              uses: aws-actions/configure-aws-credentials@v6
+              uses: aws-actions/configure-aws-credentials@e7f100cf4c008499ea8adda475de1042d6975c7b # v6
               with:
                   aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
                   aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
